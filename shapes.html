@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+
+.main{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.container1{
+display: flex;
+background-color: indigo;
+width: 30%;
+margin: 5%;
+padding: 5%;
+justify-content: center;
+}
+
+.one{
+  height: 100px; 
+  width: 100px; 
+  border-radius: 0 0 150px 150px; 
+  background-color: #e7d77c;
+  margin-top: 100px;
+}
+
+
+.two{ 
+  height: 100px; 
+  width: 100px; 
+  border-radius: 150px 150px 0 0; 
+  background-color: #e7d77c;
+}
+
+.three{
+  height: 100px; 
+  width: 100px; 
+  border-radius: 0 0 150px 150px; 
+  background-color: #e7d77c;
+  margin-top: 100px;
+}
+
+
+.container2{
+display: flex;
+background-color: rgb(73, 113, 201);
+width: 30%;
+margin: 5%;
+padding: 5%;
+justify-content: center;
+position: relative;
+}
+
+.big{
+width: 100%;
+background-color: darkblue;
+}
+
+.circle1{
+  position: absolute;
+    width: 60%;
+    height: 72%;
+    margin-top: -3%;
+    border-radius: 50%;
+    background-color: rgb(73, 113, 201);
+    margin-left: 7%
+}
+
+ .circle2{
+  position: absolute;
+    width: 36%;
+    height: 48%;
+    margin-top: 3%;
+    border-radius: 50%;
+    background-color: darkblue;
+    margin-left: 18%;
+}
+
+
+ .circle3{
+  position: absolute;
+    width: 15%;
+    height: 19%;
+    margin-top: 12%;
+    border-radius: 50%;
+    background-color: gold;
+    margin-left: 28%;
+}
+
+.button1{
+width: 30%;
+margin-left: 10%;
+}
+
+.button2{
+  width: 30%;
+  margin-left: 60%;
+}
+
+</style>
+
+</head>
+<body>
+  
+<div class="main">
+
+<div class="container1" id="first">
+
+<div class="one"></div>
+<div class="two"></div>
+<div class="three"></div>
+
+
+</div>
+
+<div class="container2" id="second">
+
+<div class="big">
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+  <div class="circle3"></div>
+</div>
+
+</div>
+</div>
+
+
+<button class="button1" id="btn1">Hide</button>
+<button class="button2" id="btn2">Hide</button>
+
+
+<script>
+
+document.getElementById("btn1").addEventListener("click", function(){
+
+
+var box1= document.getElementById("first")
+if(box1.style.display=="none"){
+
+  box1.style.display="block";
+}
+else{
+  box1.style.display="none"
+}
+})
+
+document.getElementById("btn2").addEventListener("click", function(){
+
+
+var box2= document.getElementById("second")
+if(box2.style.display=="none"){
+
+  box2.style.display="block";
+}
+else{
+  box2.style.display="none"
+}
+})
+
+</script>
+
+</body>
+</html>
